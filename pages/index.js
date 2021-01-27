@@ -5,7 +5,6 @@ import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
-import Helmet from 'react-helmet'
 
 
 export const QuizContainer = styled.div`
@@ -24,11 +23,6 @@ export default function Home() {
   return (
     
     <QuizBackground backgroundImage={db.bg}>
-      <Helmet htmlAttributes={{ lang: 'pt-BR' }}>
-        <title>Quiz Fake News - Imersão React v2 Alura</title>
-        <meta name="description" content="Quiz sobre Fake News criado por Diana de Sales durante a Imersão React e Next.js v2 da Alura"/>
-        <meta property="og:image" content={db.bg}/>
-      </Helmet> 
       <QuizContainer>
         <QuizLogo />
         <Widget>
