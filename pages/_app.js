@@ -1,5 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import db from '../db.json';
+import Head from "next/head";
 
 
 const GlobalStyle = createGlobalStyle`
@@ -36,7 +37,6 @@ export default function App({ Component, pageProps }) {
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Quiz sobre Fake News criado por Diana de Sales durante a Imersão React e Next.js v2 da Alura"/>
 				<meta property="og:image" content={db.bg}/>
-
 		</Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
