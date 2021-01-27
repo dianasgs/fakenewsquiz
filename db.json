@@ -1,5 +1,5 @@
 {
-    "bg": "./imgs/background_img.png",
+    "bg": "imgs/background_img.png",
     "title": "Quiz Fake News/Clickbait",
     "description": "Você sabe identificar fake news? Sabe o que é um clickbait? Teste seus conhecimentos aqui!",
     "questions": [
