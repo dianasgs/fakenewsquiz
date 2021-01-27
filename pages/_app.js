@@ -1,6 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import db from '../db.json';
-import Helmet from 'react-helmet'
+
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -31,11 +31,13 @@ const theme = db.theme;
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Helmet htmlAttributes={{ lang: 'pt-BR' }}>
-          <title>Quiz Fake News - Imersão React v2 Alura</title>
-          <meta name="description" content="Quiz sobre Fake News criado por Diana de Sales durante a Imersão React e Next.js v2 da Alura"/>
-          <meta property="og:image" content={db.bg}/>
-      </Helmet> 
+    <Head>
+				<title>Quiz Fake News - Imersão React v2 Alura</title>
+				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Quiz sobre Fake News criado por Diana de Sales durante a Imersão React e Next.js v2 da Alura"/>
+				<meta property="og:image" content={db.bg}/>
+
+		</Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Component {...pageProps} />
