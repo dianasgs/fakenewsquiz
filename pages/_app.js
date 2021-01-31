@@ -1,8 +1,8 @@
-import Head from "next/head";
+import React from 'react';
+import {Helmet} from 'react-helmet';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+
 import db from '../db.json';
-
-
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -26,23 +26,25 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
   }
-`
+`;
 
-const theme = db.theme;
+const { theme } = db;
 
+// eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
   return (
     <>
-    <Head>
-				<title>Quiz Fake News - Imersão React v2 Alura</title>
-				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Quiz sobre Fake News criado por Diana de Sales durante a Imersão React e Next.js v2 da Alura"/>
-				<meta property="og:image" content={db.bg}/>
-		</Head>
+      <Helmet htmlAttributes={{ lang: 'pt-BR' }}>
+        <title>Quiz Fake News - Imersão React v2 Alura</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Quiz sobre Fake News criado por Diana de Sales durante a Imersão React e Next.js v2 da Alura" />
+        <meta property="og:image" content={db.bg} />
+      </Helmet>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }

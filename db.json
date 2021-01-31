@@ -1,28 +1,101 @@
 {
-    "bg": "imgs/background_img.jpg",
-    "title": "Quiz Fake News/Clickbait",
+    "bg": "https://www.imagemhost.com.br/images/2021/01/27/background_img.jpg",
+    "title": "Quiz Fake News",
     "description": "Você sabe identificar fake news? Sabe o que é um clickbait? Teste seus conhecimentos aqui!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "image": "https://media.giphy.com/media/l0HlQXlQ3nHyLMvte/giphy.gif",
+        "title": "Qual a porcentagem de matérias sobre política que o usuário médio do facebook clica (e não apenas lê o título)?",
+        "description": "Segundo o estudo 'A little bit of knowledge: Facebook’s News Feed and self-perceptions of knowledge'",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "12%",
+          "45%",
+          "7%",
+          "83%"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/xUNemVaUZFSgHxvQXK/giphy.gif",
+        "title": "O que é o clickbait?",
+        "description": "Também conhecido como caça-clique",
+        "answer": 1,
+        "alternatives": [
+           "Uma notícia falsa ou difamatória",
+           "O uso de um título chamativo, geralmente enganoso, para atrair clicks",
+           "Links maliciosos criados com o intuito de roubar dados",
+           "Um bot ou software que automatiza o compartilhamento de fake news"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/qg7QE182TLxRHERdcJ/giphy.gif",
+        "title": "Qual das alternativas representa consequências do compartilhamento de fake news?",
+        "description": "Dica: não compartilhe uma notícia antes de checá-la",
+        "answer": 3,
+        "alternatives": [
+           "Linchamento de inocentes",
+           "Alimentação de discursos de ódio, podendo incitar violência",
+           "Problemas de saúde pública",
+           "Todas as alternativas"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/xTiQywlOn0gKyz0l56/giphy.gif",
+        "title": "Por que é importante checar a data de publicação de uma notícia?",
+        "description": "Que dia é hoje mesmo?",
+        "answer": 1,
+        "alternatives": [
+           "A data não faz diferença",
+           "A notícia pode estar fora do contexto atual ou desatualizada",
+           "Para saber se a data está correta",
+           "Se for antiga, ela não é mais válida"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/NS7gPxeumewkWDOIxi/giphy.gif",
+        "title": "O que é o viés de confirmação?",
+        "description": "Dica de vídeo: Por que você acredita em Fake News? do canal Nerdologia no Youtube",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "A tendência a se lembrar ou pesquisar informações que confirmem o que você já acredita",
+           "Quando você confirma que uma notícia é falsa",
+           "A tendência a pensar que todas as notícias são falsas",
+           "A vontade de buscar sempre pela verdade, independente do que você acredita"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/3ohzdJeMka5heqSbZu/giphy.gif",
+        "title": "Qual NÃO é uma maneira de checar se uma notícia é falsa?",
+        "description": "Ninguém está imune às fake news",
+        "answer": 3,
+        "alternatives": [
+           "Ler mais que o título e subtítulo",
+           "Avaliar a url do site",
+           "Pesquisar a mesma notícia em outros lugares",
+           "Ver se quem te enviou a notícia é um conhecido"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/USPzoH8uT73DmY3UzE/giphy.gif",
+        "title": "Uma fake news precisa necessariamente conter apenas mentiras?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+           "Sim, sempre",
+           "Não, mas precisa conter pelo menos uma informação falsa",
+           "Não, às vezes apenas tira uma informação de contexto com algum propósito"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/lSrxdwdWDlYdx0HbN8/giphy.gif",
+        "title": "Das fake news sobre o corona vírus compartilhadas no começo de 2020, quantos por cento circulou pelo Whatsapp?",
+        "description": "Cuidado com o zap",
+        "answer": 0,
+        "alternatives": [
+           "73,7%",
+           "14,2%",
+           "57,6%",
+           "99,4%"
         ]
       }
     ],
@@ -32,7 +105,7 @@
     "theme": {
       "colors": {
         "primary": "#ffea00",
-        "secondary": "#03a9f4",
+        "secondary": "#0276aa",
         "mainBg": "#212121",
         "contrastText": "#FFFFFF",
         "wrong": "#c62828",
