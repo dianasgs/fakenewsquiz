@@ -100,7 +100,9 @@
       }
     ],
     "external": [
-      ""
+      "https://aluraquiz-gastronomia.pedrohb88.vercel.app/",
+      "https://quiz-games.gabrielwolf-dev.vercel.app/",
+      "https://aluraquiz-css.omariosouto.vercel.app/"
     ],
     "theme": {
       "colors": {
